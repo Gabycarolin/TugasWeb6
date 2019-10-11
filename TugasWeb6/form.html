@@ -1,0 +1,41 @@
+<!--<DOCTYPE html> berfungsi untuk memberikan informasi pada web browser bahwa dokumen ini adalah HTML-->
+<!DOCTYPE html>
+
+<!--<html> Ini adalah tag pembuka dari keseluruhan halaman web, dan akan ditutup dengan tag penutup </html>-->
+<html>
+
+<!-- <head> Ini umumnya akan berisi kode seperti CSS dan lainnya yang tidak tampak pada browser.
+Seperti title yang akan menampilkan judul pada tab browser, dan akan ditutup dengan </head> -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<title></title> merupakan kode yang memerintahakan untuk menampilkan Judul pada tab browser-->
+    <title>Belajar Form PHP</title>
+</head>
+
+<!--<body> ini akan berisi semua elemen yang akan tampil pada halaman web, dan ditutup dengan</body>-->
+<body>
+
+    <!--<h2></h2> digunakan untuk menunjukkan bagian yang paling penting kedua (atau tingkat tertinggi kedua) 
+    pada halaman web (biasanya digunakan untuk sub judul)-->
+    <h2>Tutorial Belajar Form HTML - PHP </h2>
+
+    <!--dalam form terdapat 2 atribut, diantaranya : 
+        1. atribut action : berisi sebuah nilai berupa alamat halaman PHP dimana kita akan memproses isi form tersebut.
+                            maka tulis file 'proses.php' untuk memproses form tersebut.
+        2. atribut method : Atribut ini yang akan menentukan bagaimana cara form ‘dikirim’ ke dalam halaman proses.php.
+                            ada 2 pilihan, diantaranya ada get dan post.
+            Catatan : method="get" nilai dari form akan dikirim melalui alamat URL website
+                      method="post" nilai form tidak akan terlihat di dalam alamat URL-->
+    <form action="proses.php" method="get">
+        <!--input type="text" akan menampilkan kotak isian form.
+            name ini yang menjadi penanda masing-masing objek form agar dapat diproses dengan PHP-->
+        Nama: <input type="text" name="nama" />
+        <br /> <!--enter-->
+        E-Mail: <input type="text" name="email" />
+        <br /> <!--enter-->
+        <!--input type="submit" akan otomatis mengirim isian form ketika tombol ini di klik-->
+        <input type="submit" value="Proses Data">
+    </form>
+</body>
+
+</html>
